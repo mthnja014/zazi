@@ -1,0 +1,352 @@
+<html>
+<head>
+   <title>Zazi-Home-Page</title>
+<style>
+    .line{
+      height:50px;
+      width:20px;
+      background:white;
+      margin:2px 4px;
+      border-radius:10px;
+      animation:loading 9s infinite;
+    }
+    
+    .line:nth-child(2){
+      animation-delay: 1s;
+    }
+    .line:nth-child(3){
+      animation-delay: 2s;
+    }
+    .line:nth-child(4){
+      animation-delay: 3s;
+    }
+    .line:nth-child(5){
+      animation-delay: 4s;
+    }
+    .line:nth-child(6){
+      animation-delay: 5s;
+    }
+    .line:nth-child(7){
+      animation-delay: 6s;
+    }
+    .line:nth-child(8){
+      animation-delay: 7s;
+    }
+    .line:nth-child(9){
+      animation-delay: 8s;
+    }
+    .line:nth-child(10){
+      animation-delay: 9s;
+    }
+    
+    @keyframes loading{
+    0% {
+        background-color: hsl(0,100%,50%);
+        }
+         
+    16% {
+        background-color: hsl(60,100%,50%);
+         }
+     32% {
+        background-color: hsl(120,100%,50%);
+         }
+     48% {
+        background-color: hsl(180,100%,50%);
+        height: 5px;
+         }
+    64% {
+      background-color: hsl(240,100%,50%);
+         }
+    80%{
+      background-color:hsl(300,100%,50%);
+        }
+    100%{
+      background-color: hsl(360,100%,50%);
+    }  
+}
+#loader {
+  position: absolute;
+  left: 3cm;
+  top: 2.2cm;
+  z-index: 1;
+  width: 2.7cm;
+  height: 2.7cm;
+  margin: -76px 0 0 -76px;
+  border: 2px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 16px dotted purple;
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#mm_navbar{
+ position: fixed;
+ top: 2cm; left: 5px;
+ margin: auto;
+ width: 100%; padding: 0;
+ background-color: blue;
+ text-indent: 30px;
+ }
+ span[name="mm_navs"]{
+ margin-left: 20px;
+ color: #fff; line-height: 60px;
+ font-family:Calibri; font-size: 20px;
+ }
+ span[name="mm_navs"]:hover{
+ font-weight: bolder;
+ cursor: pointer;
+ }
+ #mm_menu_1{
+ position: fixed;
+ top: 3cm; left: 0px;
+ background-color: yellow; display: none;
+  }
+ #mm_menu_2{
+ position: fixed;
+ top: 3.6cm; 
+left: 5px;
+width: 5cm;
+ background-color: white; display: none;
+ }
+ #mm_menu_3{
+ position: fixed;
+ top: 3.6cm; left: 5px;
+ background-color: rgb(120, 250, 255); display: none;
+  }
+.g {
+background-color:red;
+width: 100%;
+height: flex;
+border: 5px solid gray;
+animation-name:bodycolor;
+animation-duration:5s;
+animation-iteration-count:infinite;
+}
+@keyframes bodycolor{
+0% { background-color:red;}
+20% { background-color:orange;}
+35% { background-color:yellow;}
+50% { background-color:green;}
+70% { background-color:blue;}    
+85% { background-color:indigo;}
+100% { background-color:violet;} 
+}
+
+.zazi {
+position: absolute;
+top: 0.5cm;
+left: 35%;
+font-size: 15px;
+font-family: 'comic sans ms';
+font-weight: bolder;
+color: purple;
+text-align: center;
+width: 65%;
+}
+h1 {
+ font-family: "algerian", times new roman;
+ font-size: 15px;
+ color: purple;
+ border: 2px inset purple;
+ animation: blinkingText 0.9s infinite;
+ }
+ .blinking {
+ animation: blinkingText 1.2s infinite;
+ }
+ @keyframes blinkingText {
+ 0% {
+ color: ;
+ }
+ 15% {
+ color: ;
+ }
+ 30% {
+ color: transparent;
+ }
+ 55% {
+ color: transparent;
+ }
+ 100% {
+ color: ;
+ }
+}
+a:visited {
+color: blue;
+}
+img {
+height: 2.5cm;
+width: 2.5cm;
+}
+.c11 {
+position: absolute;
+left: 0.5cm;
+top: 0.5cm;
+}
+.c12 {
+position: absolute;
+left: 5cm;
+top: 3.5cm;
+}
+.c13 {
+position: absolute;
+left: 5cm;
+top: 4.2cm;
+}
+.c21 {
+position: absolute;
+left: 0.5cm;
+}
+.animation {
+margin-left: 20%;
+position: relative;
+animation: animation;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+@keyframes animation{
+0% {transform: rotate(0deg);
+}
+50% {transform: rotate(180deg);
+}
+0% {transform: rotate(180deg);
+}
+100% {transform: rotate(90deg);
+}
+}
+.pic2 {
+margin-left: 20%;
+position: relative;
+animation: animation;
+animation-duration: 0s;
+animation-iteration-count: infinite;
+}
+@keyframes pic2{
+0% {transform: rotate(180deg);
+}
+100% {transform: rotate(90deg);
+
+}
+.pic3 {
+margin-left: 20%;
+position: relative;
+animation: animation;
+animation-duration: 0s;
+animation-iteration-count: infinite;
+}
+@keyframes pic3{
+0% {transform: rotate(0deg);
+}
+100% {transform: rotate(90deg);
+}
+}
+#menu {
+margin-left: 5px;
+position: absolute;
+top: 1cm;
+color: green;
+font-weight: bolder;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+</style>
+</head>
+<body>
+
+<div class="g" style="background-color:rgb(255, 255, 150); display:flex"><span name="mm_navs" onclick="mm_navs_()" style="background: transparent; border:0px";> <img src='logo.jpg' style="width:3cm; height:3cm; border-radius: 100px"></img></button>
+<div id="loader"></div>
+
+<div style="display:none;" class="animate-bottom"></div>
+<div class="zazi"><h1>ZAZI KNOW YOUR WORTH</h1></div>
+
+<div class="loader">
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+ </div>
+
+
+
+
+
+ <!-- Options/Menus -->
+ <div id="mm_menu_1">
+ <ul>
+ <li><a href="#">New</a></li>
+ <li><a href="#">R100 to R200</a></li>
+ <li><a href="#">R200 to R300</a></li>
+ <li><a href="#">300 to R400</a></li>
+ </ul>
+ </div>
+
+ <div id="mm_menu_2">
+<a href="price_list.html">Price List</a><br><br>
+<a href="photoshop.html">Products Photos</a><br>
+ </div>
+
+ </div>
+<br><br><br><br><br><br><br>
+<center>
+
+<script type="text/javascript">
+
+ function mm_navs_2(){
+ var menu2 = document.getElementById("mm_menu_2");
+ menu2.style.display = 'block';
+ }
+ 
+ function mm_navs(){
+ var menu1 = document.getElementById("mm_menu_1");
+ var menu2 = document.getElementById("mm_menu_2");
+ var menu3 = document.getElementById("mm_menu_3");
+ menu1.style.display = 'none'
+ menu2.style.display = 'none';
+ menu3.style.display = 'none';
+  }
+ </script>
+</body>
+</html>

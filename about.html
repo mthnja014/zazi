@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>about</title>
+<style>
+#mm_navbar{
+position: absolute;
+top: 2cm; 
+left: 5px;
+}
+span[name="mm_navs"]{
+margin-left: 5px;
+font-family:Calibri; 
+font-size: 20px;
+}
+span[name="mm_navs"]:hover{
+font-weight: bolder;
+cursor: pointer;
+}
+#mm_menu{
+position: absolute;
+top: 3cm;
+left: 0.5cm;
+background-color: yellow; 
+display: none;
+  }
+.pic1 {
+position: absolute;
+top: 2cm;
+left: 50%;
+}
+td {
+height:1cm;
+}
+body {
+background: repeating-linear-gradient(-45deg, rgb(200, 200, 255), rgb(200, 200, 255) 10%, rgb(200, 200, 255) 10%, grey 20% );
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+a:visited {
+color: blue;
+}
+    .loader{
+      height:50px;
+      position:absolute;
+      top:2cm;
+     margin-left: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform:translate(-50%,-50%);
+    }
+    
+    .line{
+      height:50px;
+      width:20px;
+      background:white;
+      margin:2px 4px;
+      border-radius:10px;
+      animation:loading 9s infinite;
+    }
+    
+    .line:nth-child(2){
+      animation-delay: 1s;
+    }
+    .line:nth-child(3){
+      animation-delay: 2s;
+    }
+    .line:nth-child(4){
+      animation-delay: 3s;
+    }
+    .line:nth-child(5){
+      animation-delay: 4s;
+    }
+    .line:nth-child(6){
+      animation-delay: 5s;
+    }
+    .line:nth-child(7){
+      animation-delay: 6s;
+    }
+    .line:nth-child(8){
+      animation-delay: 7s;
+    }
+    .line:nth-child(9){
+      animation-delay: 8s;
+    }
+    .line:nth-child(10){
+      animation-delay: 9s;
+    }
+    
+    @keyframes loading{
+    0% {
+        background-color: rgb(200, 200, 255);
+        }
+         
+    16% {
+        background-color: rgb(100, 100, 255);
+         }
+     32% {
+        background-color: rgb(200, 200, 255);
+         }
+     48% {
+        background-color: rgb(100, 100, 255);
+        height: 5px;
+         }
+    64% {
+      background-color: rgb(200, 200, 255);
+         }
+    80%{
+      background-color:rgb(100, 100, 255);
+        }
+    100%{
+      background-color: rgb(100, 100, 255);
+    }  
+}
+.elangeni {
+position: absolute;
+top: 0.5cm;
+left: 35%;
+font-size: 15px;
+font-family: 'comic sans ms';
+font-weight: bolder;
+color: purple;
+}
+ h1 {
+ font-family: "algerian", times new roman;
+ font-size: 15px;
+ color:pink;
+ border: 2px inset purple;
+ animation: blinkingText 0s infinite;
+ }
+ .blinking {
+ animation: blinkingText 1.2s infinite;
+ }
+ @keyframes blinkingText {
+ 0% {
+ color: ;
+ }
+ 15% {
+ color: ;
+ }
+ 30% {
+ color: transparent;
+ }
+ 55% {
+ color: transparent;
+ }
+ 100% {
+ color: ;
+ }
+}
+#loader {
+  position: absolute;
+  left: 2.4cm;
+  top: 2.2cm;
+  z-index: 1;
+  width: 2.6cm;
+  height: 2.6cm;
+  margin: -76px 0 0 -76px;
+  border: 2px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 2px solid rgb(0, 0, 255);
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+</style>
+</head>
+<body>
+<div class="banner" style="background-color:rgb(180, 180, 255); display:flex"><span name="mm_navs" onclick="mm_navs_()" style="background: transparent; border:0px";> <img src='logo.jpg' style="width:3cm; height:3cm; border-radius: 100px"></img>
+<div id="loader"></div>
+<div style="display:none;" class="animate-bottom"></div>
+<div class="elangeni"><h1>ZAZI KNOW YOUR WORTH</h1></div>
+<div class="loader">
+<div class='line'></div>
+<div class='line'></div>
+<div class='line'></div>
+<div class='line'></div>
+<div class='line'></div>
+<div class='line'></div>
+<div class='line'></div>
+ </div></div><br>
+
+<div><button onclick="location.href='index.html'">🏠home</button></div><br>
+
+<div><img src="sya.jpg" style="width: 60%; height: 10cm"></img></div>
+<div><p><b>Meet the Members of Clothing Brand.</b></p></div>
+<div>
+<table>
+<tr>
+<td style="width:150px"><b>Title</b></td><td>Mr</td>
+</tr>
+<tr>
+<td style="width:150px"><b>Firstname</b></td><td>Syanda</td>
+</tr>
+<tr>
+<td style="width:150px"><b>Surname</b></td><td>Gumede</td>
+</tr>
+<td style="width:150px"><b>Role</b></td><td>Managing Director</td>
+</tr>
+</table></div><br><br>
+
+<fieldset><div><p style="font-size: 18px"><b>Working Hours</b></p></div>
+
+<div>
+<table>
+<tr>
+<td style="width:130px">Monday</td><td>09:00-17:00</td>
+</tr>
+<td style="width:130px">Tuesday</td><td>09:00-17:00</td>
+</tr>
+<td style="width:130px">Wednesday</td><td>09:00-17:00</td>
+</tr>
+<td style="width:130px">Thursday</td><td>09:00-17:00</td>
+</tr>
+<td style="width:130px">Friday</td><td>09:00-17:00</td>
+</tr>
+<td style="width:130px">Saturday</td><td>Closed</td>
+</tr>
+<td style="width:130px">Sunday</td><td>Closed</td>
+</tr>
+</table></div><br><br>
+<div><p style="font-size: 18px"><b>Contact Details</b></p></div>
+<div><p><img src="whatsapp.jpg" style="width:0.4cm; height:0.4cm"></img> +27 76 806 9125/+27 67 841 0826</p></div>
+<div><p>✉️ <a href='mailto:zaziknowyourworth@gmail.com'>zaziknowyourworth.com</a></p></div>
+
+<div id="mm_menu">
+<a href="index.html">Home</a><br>
+<script>
+function mm_navs_(){
+ var menu = document.getElementById("mm_menu");
+ menu.style.display = 'block';
+ }
+</script>
+</body>
+</html>

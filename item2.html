@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>item</title>
+
+<style>
+
+#mm_navbar{
+
+position: absolute;
+
+top: 2cm; 
+
+left: 5px;
+
+}
+
+span[name="mm_navs"]{
+
+margin-left: 5px;
+
+font-family:Calibri; 
+
+font-size: 20px;
+
+}
+
+span[name="mm_navs"]:hover{
+
+font-weight: bolder;
+
+cursor: pointer;
+
+}
+
+#mm_menu{
+
+position: absolute;
+
+top: 3cm;
+
+left: 0.5cm;
+
+background-color: yellow; 
+
+display: none;
+
+  }
+
+.pic1 {
+
+position: absolute;
+
+top: 2cm;
+
+left: 50%;
+
+}
+
+td {
+
+height:1cm;
+
+}
+
+body {
+
+background: repeating-linear-gradient(-45deg, rgb(100, 100, 255), rgb(200, 200, 255) 10%, rgb(100, 100, 255) 10%, grey 20% );
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+}
+
+a:visited {
+
+color: blue;
+
+}
+
+    .loader{
+
+      height:50px;
+
+      position:absolute;
+
+      top:2cm;
+
+     margin-left: 60%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      transform:translate(-50%,-50%);
+
+    }
+
+    
+
+    .line{
+
+      height:50px;
+
+      width:20px;
+
+      background:white;
+
+      margin:2px 4px;
+
+      border-radius:10px;
+
+      animation:loading 9s infinite;
+
+    }
+
+    
+
+    .line:nth-child(2){
+
+      animation-delay: 1s;
+
+    }
+
+    .line:nth-child(3){
+
+      animation-delay: 2s;
+
+    }
+
+    .line:nth-child(4){
+
+      animation-delay: 3s;
+
+    }
+
+    .line:nth-child(5){
+
+      animation-delay: 4s;
+
+    }
+
+    .line:nth-child(6){
+
+      animation-delay: 5s;
+
+    }
+
+    .line:nth-child(7){
+
+      animation-delay: 6s;
+
+    }
+
+    .line:nth-child(8){
+
+      animation-delay: 7s;
+
+    }
+
+    .line:nth-child(9){
+
+      animation-delay: 8s;
+
+    }
+
+    .line:nth-child(10){
+
+      animation-delay: 9s;
+
+    }
+
+    
+
+    @keyframes loading{
+
+    0% {
+
+        background-color: rgb(200 200, 255);
+
+        }
+
+         
+
+    16% {
+
+        background-color: rgb(100, 100, 255);
+
+         }
+
+     32% {
+
+        background-color: rgb(200, 200, 255);
+
+         }
+
+     48% {
+
+        background-color: rgb(100, 100, 255);
+
+        height: 5px;
+
+         }
+
+    64% {
+
+      background-color: rgb(200, 200, 255);
+
+         }
+
+    80%{
+
+      background-color:rgb(100, 100, 200);
+
+        }
+
+    100%{
+
+      background-color: rgb(200, 200, 255);
+
+    }  }
+
+.elangeni {
+
+position: absolute;
+
+top: 0.5cm;
+
+left: 35%;
+
+font-size: 15px;
+
+font-family: 'comic sans ms';
+
+font-weighr: bolder;
+
+color: rgb(255, 200, 200);
+
+}
+
+ h1 {
+
+ font-family: "algerian", times new roman;
+
+ font-size: 15px;
+
+ color: purple;
+
+ border: 2px inset rgb(200, 200, 255);
+
+ animation: blinkingText 0s infinite;
+
+ }
+
+ .blinking {
+
+ animation: blinkingText 1.2s infinite;
+
+ }
+
+ @keyframes blinkingText {
+
+ 0% {
+
+ color: ;
+
+ }
+
+ 15% {
+
+ color: ;
+
+ }
+
+ 30% {
+
+ color: transparent;
+
+ }
+
+ 55% {
+
+ color: transparent;
+
+ }
+
+ 100% {
+
+ color: ;
+
+ }
+
+}
+
+#loader {
+
+  position: absolute;
+
+  left: 2.4cm;
+
+  top: 2.2cm;
+
+  z-index: 1;
+
+  width: 2.6cm;
+
+  height: 2.6cm;
+
+  margin: -76px 0 0 -76px;
+
+  border: 2px solid #f3f3f3;
+
+  border-radius: 100%;
+
+  border-top: 2px solid rgb(0, 0, 255);
+
+  -webkit-animation: spin 5s linear infinite;
+
+  animation: spin 5s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+
+  0% { -webkit-transform: rotate(0deg); }
+
+  100% { -webkit-transform: rotate(360deg); }
+
+}
+
+@keyframes spin {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(360deg); }
+
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+
+  position: relative;
+
+  -webkit-animation-name: animatebottom;
+
+  -webkit-animation-duration: 1s;
+
+  animation-name: animatebottom;
+
+  animation-duration: 1s
+
+}
+
+@-webkit-keyframes animatebottom {
+
+  from { bottom:-100px; opacity:0 } 
+
+  to { bottom:0px; opacity:1 }
+
+}
+
+@keyframes animatebottom { 
+
+  from{ bottom:-100px; opacity:0 } 
+
+  to{ bottom:0; opacity:1 }
+
+}
+
+img {
+
+width: 100%;
+
+height: 25cm;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="banner" style="background-color:rgb(200, 200, 255); display:flex">
+
+<img src='logo.jpg' style="width:3cm; height:3cm; border-radius: 100px"></img>
+
+<div id="loader"></div>
+
+<div style="display:none;" class="animate-bottom"></div>
+
+<div class="elangeni"><h1>ZAZI KNOW YOUR WORTH</h1></div>
+
+<div class="loader">
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+<div class='line'></div>
+
+ </div></div><br>
+
+<div><button onclick="location.href='index.html'">🏠home</button></div><br>
+
+<img src='back.jpg' style="width:1cm; height:1cm; position: absolute; left: 0.2cm" ></img>
+
+<button onclick="location.href='item1.html'" style="background: transparent; border: 0px; width:1cm; height:1cm; position: absolute; left: 0.2cm"></button>
+
+<img src='foward.jpg' style="width:1cm; height:1cm; position: absolute; right: 0.2cm" ></img>
+
+<button onclick="location.href='item3.html'" style="background: transparent; border: 0px; width:1cm; height:1cm; position: absolute; right: 0.2cm"></button>
+
+<br><br><br><br><br><br>
+
+<fieldset>
+
+<center>
+
+<img src='item2.jpg'></img><br></center>
+
+<p><b>Description:</b> T-shirt with brand name.<br>
+
+<b>Price:</b> R190<br>
+
+</fieldset>
+
+</body>
+
+</html>
